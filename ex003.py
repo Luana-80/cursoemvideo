@@ -1,5 +1,5 @@
-n1 = int(input('Escreva um numero'))
-n2 = int(input('Escreva outro numero'))
+n1 = int(input('Escreva um numero: '))
+n2 = int(input('Escreva outro numero: '))
 s = n1 + n2
 su = n1 - n2
 m = n1 * n1

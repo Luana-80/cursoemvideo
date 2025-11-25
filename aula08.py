@@ -11,6 +11,9 @@ print('A raiz de um {} arredondando pra baixo é igual a {}'.format(num,math.flo
 #raiz = sqrt(num)
 #print('A raiz de um {} é igual a {:.2f}'.format(num, floor(raiz)))
 
+print('**********************')
+print('o programa vai escrever um numero aleatorio de 1 a 60, quer ver?')
+print('**********************')
 import random
 num = random.randint(1,60)
 print(num)

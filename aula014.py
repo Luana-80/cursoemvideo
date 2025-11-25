@@ -1,10 +1,15 @@
-n = 1
 par = impar = 0
-while n!= 0:
-    n = int(input('Digite um valor: '))
-    if n != 0:
-        if n % 2 == 0:
-            par += 1
-        else:
-            impar += 1
-print('Voce digitou {} n°s pares e {} n°s impares!'.format(par, impar))
+
+while True:
+    try:
+        n = int(input("Digite um valor (0 para sair): "))
+    except ValueError:
+        print("Entrada inválida. Digite apenas números inteiros.")
+        continue
+
+    if n == 0:
+        break
+    par += (n % 2 == 0)
+    impar += (n % 2 != 0)
+
+print(f"Pares: {par} | Ímpares: {impar}")
